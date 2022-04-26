@@ -1,0 +1,17 @@
+We’d like to create a service that is able to handle football scoreboards on sports events.
+Event: Team A vs Team B
+Score: 1-0
+
+port:8082
+h2 console : http://localhost:8082/h2
+Driver Class : org.h2.Driver
+User Name : sa
+password : score
+JDBC URL : jdbc:h2:mem:football-score
+
+get all api call :  http://localhost:8082/api/football/score
+create one api call: http://localhost:8082/api/football/score
+fine by team one : http://localhost:8082/api/football/score/teamName
+find by team two : http://localhost:8082/api/football/score/-teamName
+find by id : http://localhost:8082/api/football/score/id/id
+update using http put : http://localhost:8082/api/football/score/id/1
